@@ -1,20 +1,106 @@
-Wallboard Gizlilik Politikası
-Son güncelleme: 01.11.2026
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wallboard Chrome uzantısının gizlilik politikası.">
+  <title>Wallboard Gizlilik Politikası</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #182230;
+      --muted: #536273;
+      --line: #e4e9ef;
+      --brand: #1769aa;
+      --bg: #f4f7fa;
+    }
 
-Amaç
-Wallboard, operasyon bilgilerinin tek bir ekranda görüntülenmesini ve takip edilmesini kolaylaştırmak amacıyla geliştirilmiş bir Chrome uzantısıdır.
+    * { box-sizing: border-box; }
 
-İşlenen Veriler
-Wallboard ekranında görüntülenmesi için gerekli operasyon bilgileri işlenebilir. Bunlar kullanılan sisteme ve özelliklere göre istasyon bilgisi, durum veya çağrı bilgisi, Unit ID ve Unit Code gibi alanları içerebilir. Bu bilgiler yalnızca Wallboard ekranını oluşturmak, güncellemek ve uzantının kullanıcı tarafından başlatılan işlevlerini yerine getirmek amacıyla kullanılır.
+    body {
+      margin: 0;
+      padding: 48px 20px;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    }
 
-Veri Paylaşımı
-Wallboard kullanıcı verilerini üçüncü kişilerle paylaşmaz, satmaz veya reklam amacıyla kullanmaz.
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      box-shadow: 0 12px 36px rgba(20, 40, 60, .07);
+    }
 
-Veri Saklama
-Uzantının verileri nerede ve ne kadar süreyle sakladığı, bağlı olduğu sistemin çalışma şekline göre belirlenir. Wallboard verileri kurum içi API ve SQL Server üzerinde saklanıyorsa, saklama bu kurum içi sistemlerde gerçekleştirilir.
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(28px, 5vw, 38px);
+      line-height: 1.2;
+      letter-spacing: -.03em;
+    }
 
-İzinler
-Uzantı, Wallboard işlevlerini sunmak için gereken Chrome izinlerini kullanır ve yalnızca desteklenen sayfalarda çalışır.
+    .updated {
+      margin: 0 0 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-İletişim
-Gizlilik politikasıyla ilgili sorularınız için geliştiriciyle iletişime geçebilirsiniz.
+    section {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      color: var(--brand);
+      font-size: 19px;
+    }
+
+    p { margin: 0; }
+
+    @media (max-width: 600px) {
+      body { padding: 16px 10px; }
+      main { border-radius: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Wallboard Gizlilik Politikası</h1>
+    <p class="updated"><strong>Son güncelleme:</strong> 01.11.2026</p>
+
+    <section>
+      <h2>Amaç</h2>
+      <p>Wallboard, operasyon bilgilerinin tek bir ekranda görüntülenmesini ve takip edilmesini kolaylaştırmak amacıyla geliştirilmiş bir Chrome uzantısıdır.</p>
+    </section>
+
+    <section>
+      <h2>İşlenen Veriler</h2>
+      <p>Wallboard ekranında görüntülenmesi için gerekli operasyon bilgileri işlenebilir. Bunlar kullanılan sisteme ve özelliklere göre istasyon bilgisi, durum veya çağrı bilgisi, Unit ID ve Unit Code gibi alanları içerebilir. Bu bilgiler yalnızca Wallboard ekranını oluşturmak, güncellemek ve uzantının kullanıcı tarafından başlatılan işlevlerini yerine getirmek amacıyla kullanılır.</p>
+    </section>
+
+    <section>
+      <h2>Veri Paylaşımı</h2>
+      <p>Wallboard kullanıcı verilerini üçüncü kişilerle paylaşmaz, satmaz veya reklam amacıyla kullanmaz.</p>
+    </section>
+
+    <section>
+      <h2>Veri Saklama</h2>
+      <p>Uzantının verileri nerede ve ne kadar süreyle sakladığı, bağlı olduğu sistemin çalışma şekline göre belirlenir. Wallboard verileri kurum içi API ve SQL Server üzerinde saklanıyorsa, saklama bu kurum içi sistemlerde gerçekleştirilir.</p>
+    </section>
+
+    <section>
+      <h2>İzinler</h2>
+      <p>Uzantı, Wallboard işlevlerini sunmak için gereken Chrome izinlerini kullanır ve yalnızca desteklenen sayfalarda çalışır.</p>
+    </section>
+
+    <section>
+      <h2>İletişim</h2>
+      <p>Gizlilik politikasıyla ilgili sorularınız için geliştiriciyle iletişime geçebilirsiniz.</p>
+    </section>
+  </main>
+</body>
+</html>
